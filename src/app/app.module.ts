@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { AppareilComponent } from './appareil/appareil.component';
-
+import {AppareilService} from './services/appareil.service';
 import {FormsModule} from '@angular/forms';
 
 @NgModule({
@@ -15,7 +15,7 @@ import {FormsModule} from '@angular/forms';
     BrowserModule,
       FormsModule
   ],
-  providers: [],
+  providers: [AppareilService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

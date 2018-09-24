@@ -6,4 +6,10 @@
   </div>
   <h4 [ngStyle]="{color:getColor()}">Appareil Name : {{appareilName}} -- Appareil Status : {{getStatus()}}</h4>
   <input type="text" class="form-control" [(ngModel)]="appareilName">
+  <button class="btn btn-success"
+          [disabled]="appareilStatus==='allumé'"
+          (click)="onSwitchOnOne()">Allumer</button>
+  <button class="btn btn-danger"
+          [disabled]="appareilStatus==='éteint'"
+          (click)="onSwitchOffOne()">Eteindre</button>
 </li>

@@ -8,6 +8,21 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'first app with angular';
   isAuth = false ;
+
+  appareils = [
+      {
+          name : 'Machine à laver',
+          status: 'éteint'
+      },
+      {
+          name : 'Télévision',
+          status: 'allumé'
+      },
+      {
+          name : 'Ordinateur',
+          status: 'éteint'
+      }
+  ];
   constructor() {
       setTimeout(() => {
           this.isAuth = true;
